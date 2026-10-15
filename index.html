@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="TURBO GARAGE — профессиональное обслуживание и ремонт автомобилей. Запишитесь на диагностику и обслуживание.">
+  <title>TURBO GARAGE — сервис, которому доверяют</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="logo"><span>TURBO</span> GARAGE<span class="dot">.</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#services">Услуги</a>
+        <a href="#about">О сервисе</a>
+        <a href="#prices">Цены</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#booking" class="nav-button">Записаться ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="eyebrow"><span class="status-dot"></span> АВТОСЕРВИС НОВОГО УРОВНЯ</div>
+        <h1>Твой автомобиль.<br>Наша <span>ответственность.</span></h1>
+        <p class="hero-description">
+          Ремонтируем с умом. Обслуживаем с заботой.
+          Возвращаем уверенность за рулём.
+        </p>
+        <div class="hero-actions">
+          <a href="#booking" class="button button-red">Записаться на сервис <span>↗</span></a>
+          <a href="#services" class="button button-outline">Наши услуги</a>
+        </div>
+        <div class="hero-note"><span>01</span> Качество в каждой детали</div>
+      </div>
+      <div class="hero-bottom">
+        <span>ТОЧНОСТЬ · ОПЫТ · РЕЗУЛЬТАТ</span>
+        <a href="#services">ЛИСТАЙ НИЖЕ ↓</a>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat"><strong>10<span>+</span></strong><p>Направлений ремонта</p></div>
+        <div class="stat"><strong>100<span>%</span></strong><p>Внимания к деталям</p></div>
+        <div class="stat"><strong>1<span> цель</span></strong><p>Исправный автомобиль</p></div>
+        <div class="stat"><strong>0<span> сюрпризов</span></strong><p>Согласование работ заранее</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">ЧТО МЫ ДЕЛАЕМ</div>
+            <h2>Всё для твоего<br><span>автомобиля.</span></h2>
+          </div>
+          <p>От регулярного технического обслуживания до сложной диагностики. Подберём решение под твою задачу.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">⌕</div>
+            <span class="service-number">01 / DIAGNOSTICS</span>
+            <h3>Компьютерная диагностика</h3>
+            <p>Поиск ошибок электронных систем и проверка основных параметров автомобиля.</p>
+            <a href="#booking" class="service-link" data-service="Компьютерная диагностика">Выбрать услугу ↗</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">⚙</div>
+            <span class="service-number">02 / MAINTENANCE</span>
+            <h3>Техническое обслуживание</h3>
+            <p>Замена масла, фильтров и расходников по регламенту производителя.</p>
+            <a href="#booking" class="service-link" data-service="Техническое обслуживание">Выбрать услугу ↗</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">◉</div>
+            <span class="service-number">03 / BRAKES</span>
+            <h3>Тормозная система</h3>
+            <p>Проверка и обслуживание тормозов для уверенного и безопасного движения.</p>
+            <a href="#booking" class="service-link" data-service="Тормозная система">Выбрать услугу ↗</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">↗</div>
+            <span class="service-number">04 / SUSPENSION</span>
+            <h3>Подвеска и ходовая</h3>
+            <p>Поиск стуков, проверка элементов подвески и рекомендации по ремонту.</p>
+            <a href="#booking" class="service-link" data-service="Подвеска и ходовая">Выбрать услугу ↗</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">❄</div>
+            <span class="service-number">05 / CLIMATE</span>
+            <h3>Кондиционер</h3>
+            <p>Проверка работы климатической системы и выявление неисправностей.</p>
+            <a href="#booking" class="service-link" data-service="Кондиционер">Выбрать услугу ↗</a>
+          </article>
+          <article class="service-card service-card-accent">
+            <span class="service-number">НЕ ЗНАЕШЬ, ЧТО СЛОМАЛОСЬ?</span>
+            <h3>Начнём с диагностики.</h3>
+            <p>Опиши симптомы — поможем выбрать первый шаг.</p>
+            <a href="#booking" class="button button-red" data-service="Первичная диагностика">Обсудить проблему ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <div class="visual-label">TURBO GARAGE / WORKSHOP</div>
+          <div class="visual-ring"></div>
+          <div class="visual-car">TG<span>.</span></div>
+          <div class="visual-caption">DRIVE WITH CONFIDENCE</div>
+        </div>
+        <div class="about-copy">
+          <div class="eyebrow">ПОЧЕМУ МЫ</div>
+          <h2>Ремонт без<br><span>лишних слов.</span></h2>
+          <p class="about-intro">Хороший сервис — это не обещания. Это понятный процесс, прозрачные решения и уважение к твоему времени.</p>
+          <div class="benefit"><span>01</span><div><h3>Сначала согласование</h3><p>Обсуждаем стоимость и объём работ до начала ремонта.</p></div></div>
+          <div class="benefit"><span>02</span><div><h3>Понятные объяснения</h3><p>Рассказываем, что обнаружено и какие варианты решения есть.</p></div></div>
+          <div class="benefit"><span>03</span><div><h3>Внимание к деталям</h3><p>Проверяем результат и не забываем о важных мелочах.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section prices" id="prices">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow">ПОНЯТНАЯ СТОИМОСТЬ</div><h2>Ориентиры<br><span>по ценам.</span></h2></div>
+          <p>Примерные цены для демонстрации сайта. Реальная стоимость зависит от автомобиля и объёма работ.</p>
+        </div>
+        <div class="price-list">
+          <div class="price-row"><div><span class="price-index">01</span><span>Компьютерная диагностика</span></div><strong>от 1 000 ₽</strong></div>
+          <div class="price-row"><div><span class="price-index">02</span><span>Замена моторного масла</span></div><strong>от 1 200 ₽</strong></div>
+          <div class="price-row"><div><span class="price-index">03</span><span>Замена тормозных колодок</span></div><strong>от 1 500 ₽</strong></div>
+          <div class="price-row"><div><span class="price-index">04</span><span>Диагностика подвески</span></div><strong>от 1 000 ₽</strong></div>
+          <div class="price-row"><div><span class="price-index">05</span><span>Проверка кондиционера</span></div><strong>от 1 000 ₽</strong></div>
+        </div>
+        <p class="price-disclaimer">* Демонстрационные цены. Перед публикацией замени их на реальные.</p>
+      </div>
+    </section>
+
+    <section class="booking section" id="booking">
+      <div class="container booking-grid">
+        <div>
+          <div class="eyebrow">ЗАПИСЬ НА СЕРВИС</div>
+          <h2>Пора вернуть<br><span>драйв.</span></h2>
+          <p class="booking-description">Оставь контакты и расскажи, что случилось. Мы подготовим заявку для связи с тобой.</p>
+          <div class="booking-detail"><span>⌖</span><div><small>АДРЕС</small><p>Укажи адрес автосервиса</p></div></div>
+          <div class="booking-detail"><span>◷</span><div><small>РЕЖИМ РАБОТЫ</small><p>Укажи актуальное расписание</p></div></div>
+        </div>
+        <form class="booking-form" id="bookingForm">
+          <label for="name">Как к тебе обращаться?</label>
+          <input id="name" name="name" type="text" placeholder="Твоё имя" required minlength="2">
+          <label for="phone">Номер телефона</label>
+          <input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+          <label for="service">Какая услуга нужна?</label>
+          <select id="service" name="service" required>
+            <option value="">Выбери услугу</option>
+            <option>Компьютерная диагностика</option>
+            <option>Техническое обслуживание</option>
+            <option>Тормозная система</option>
+            <option>Подвеска и ходовая</option>
+            <option>Кондиционер</option>
+            <option>Первичная диагностика</option>
+            <option>Другая проблема</option>
+          </select>
+          <label for="message">Комментарий <span>(необязательно)</span></label>
+          <textarea id="message" name="message" rows="3" placeholder="Марка автомобиля, симптомы..."></textarea>
+          <button class="button button-red submit-button" type="submit">Подготовить заявку <span>↗</span></button>
+          <p class="form-note">Демо-форма: заявка откроется в приложении для отправки сообщений. Автоматическая отправка на сервер не настроена.</p>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer-main">
+      <a href="#home" class="logo"><span>TURBO</span> GARAGE<span class="dot">.</span></a>
+      <p>Хороший сервис начинается<br>с правильного разговора.</p>
+      <a href="#booking" class="footer-link">Обсудить обслуживание ↗</a>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> TURBO GARAGE. Учебный проект.</span>
+      <a href="#home">НАВЕРХ ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>
